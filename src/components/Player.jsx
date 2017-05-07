@@ -89,7 +89,7 @@ export default class Player extends Component{
 		const curMusic = this.props.musicList[this.props.curIndex];
 		return (
 			<div styleName="player">
-				<Disc status={this.props.status} imgSrc={curMusic.discImg}></Disc>
+				<Disc loading={this.state.loading} status={this.props.status} imgSrc={curMusic.discImg}></Disc>
 				<Progress curTime={this.state.curTime} allTime={this.state.allTime} percent={this.state.percent}></Progress>
 				<Control 
 					playHandle={this.playHandle} 
@@ -139,8 +139,10 @@ class Disc extends Component{
 			transform:`rotate(${this.state.deg}deg)`
 		}
 		return(
-			<div styleName="disc" style={style}>
-				<div styleName="cover"><img src={this.props.imgSrc}/></div>
+			<div>
+				<div styleName="disc" style={style}>
+					<div styleName="cover"><img src={this.props.imgSrc}/></div>
+				</div>
 			</div>
 		)
 	}

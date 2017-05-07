@@ -7300,7 +7300,7 @@ var Player = (_dec = (0, _reactCssModules2.default)(_player2.default, { allowMul
 			return _react2.default.createElement(
 				'div',
 				{ styleName: 'player' },
-				_react2.default.createElement(Disc, { status: this.props.status, imgSrc: curMusic.discImg }),
+				_react2.default.createElement(Disc, { loading: this.state.loading, status: this.props.status, imgSrc: curMusic.discImg }),
 				_react2.default.createElement(Progress, { curTime: this.state.curTime, allTime: this.state.allTime, percent: this.state.percent }),
 				_react2.default.createElement(Control, {
 					playHandle: this.playHandle,
@@ -7368,11 +7368,15 @@ var Disc = (_dec2 = (0, _reactCssModules2.default)(_player2.default, { allowMult
 			};
 			return _react2.default.createElement(
 				'div',
-				{ styleName: 'disc', style: style },
+				null,
 				_react2.default.createElement(
 					'div',
-					{ styleName: 'cover' },
-					_react2.default.createElement('img', { src: this.props.imgSrc })
+					{ styleName: 'disc', style: style },
+					_react2.default.createElement(
+						'div',
+						{ styleName: 'cover' },
+						_react2.default.createElement('img', { src: this.props.imgSrc })
+					)
 				)
 			);
 		}
