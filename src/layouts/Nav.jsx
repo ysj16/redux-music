@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDom from 'react-dom';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import styles from './Frame.css';
 import CSSModules from 'react-css-modules';
 import classnames from 'classnames';
@@ -40,7 +40,7 @@ class Nav extends Component{
 			<nav ref="nav" styleName="topNav">
 				{this.props.navs.map((nav,index)=>{
 					let classes = classnames({
-						active:nav.href==browserHistory.getCurrentLocation().pathname
+						active:nav.href==hashHistory.getCurrentLocation().pathname
 					})
 					return <a key={nav.id} href={nav.href} onClick={this.navHandle} styleName={classes}>{nav.title}</a>
 				})}

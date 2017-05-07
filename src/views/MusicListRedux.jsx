@@ -12,7 +12,7 @@ const GET_SONGSHEET_ERROR = "GET_SONGSHEET_ERROR";
 function getSongSheet(){
 	return{
 		types:[GET_SONGSHEET,GET_SONGSHEET_SUCCESS,GET_SONGSHEET_ERROR],
-		url:"/api/getSongSheets2.json"
+		url:"../../api/getSongSheets2.json"
 	}
 }
 const actions = {

@@ -39,7 +39,7 @@ function init(){
 function getMusicList(){
 	return{
 		types:[GET_MUSICLIST,GET_MUSICLIST_SUCCESS,GET_MUSICLIST_ERROR],
-		url:"/api/getMusicList.json"
+		url:"../../api/getMusicList.json"
 	}
 }
 export const actions = {

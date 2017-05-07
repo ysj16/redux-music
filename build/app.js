@@ -2911,19 +2911,19 @@ var GET_HOTSINGER_ERROR = "GET_HOTSINGER_ERROR";
 function getSlider() {
 	return {
 		types: [GET_SLIDERS, GET_SLIDERS_SUCCESS, GET_SLIDERS_FAIL],
-		url: "/api/getSliderItem.json"
+		url: "../../api/getSliderItem.json"
 	};
 }
 function getSongSheet() {
 	return {
 		types: [GET_SONGSHEET, GET_SONGSHEET_SUCCESS, GET_SONGSHEET_ERROR],
-		url: "/api/getSongSheets.json"
+		url: "../../api/getSongSheets.json"
 	};
 }
 function getHotSinger() {
 	return {
 		types: [GET_HOTSINGER, GET_HOTSINGER_SUCCESS, GET_HOTSINGER_ERROR],
-		url: "/api/getHotSinger.json"
+		url: "../../api/getHotSinger.json"
 	};
 }
 var actions = {
@@ -3021,7 +3021,7 @@ var GET_SONGSHEET_ERROR = "GET_SONGSHEET_ERROR";
 function getSongSheet() {
 	return {
 		types: [GET_SONGSHEET, GET_SONGSHEET_SUCCESS, GET_SONGSHEET_ERROR],
-		url: "/api/getSongSheets2.json"
+		url: "../../api/getSongSheets2.json"
 	};
 }
 var actions = {
@@ -3118,7 +3118,7 @@ function init() {
 function getMusicList() {
 	return {
 		types: [GET_MUSICLIST, GET_MUSICLIST_SUCCESS, GET_MUSICLIST_ERROR],
-		url: "/api/getMusicList.json"
+		url: "../../api/getMusicList.json"
 	};
 }
 var actions = exports.actions = {
@@ -7786,7 +7786,7 @@ var Nav = (_dec = (0, _reactCssModules2.default)(_Frame2.default, { allowMultipl
 				{ ref: 'nav', styleName: 'topNav' },
 				this.props.navs.map(function (nav, index) {
 					var classes = (0, _classnames2.default)({
-						active: nav.href == _reactRouter.browserHistory.getCurrentLocation().pathname
+						active: nav.href == _reactRouter.hashHistory.getCurrentLocation().pathname
 					});
 					return _react2.default.createElement(
 						'a',

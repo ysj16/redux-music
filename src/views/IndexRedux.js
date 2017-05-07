@@ -26,19 +26,19 @@ const GET_HOTSINGER_ERROR = "GET_HOTSINGER_ERROR";
 function getSlider(){
 	return{
 		types:[GET_SLIDERS,GET_SLIDERS_SUCCESS,GET_SLIDERS_FAIL],
-		url:"/api/getSliderItem.json"
+		url:"../../api/getSliderItem.json"
 	}
 }
 function getSongSheet(){
 	return{
 		types:[GET_SONGSHEET,GET_SONGSHEET_SUCCESS,GET_SONGSHEET_ERROR],
-		url:"/api/getSongSheets.json"
+		url:"../../api/getSongSheets.json"
 	}
 }
 function getHotSinger(){
 	return{
 		types:[GET_HOTSINGER,GET_HOTSINGER_SUCCESS,GET_HOTSINGER_ERROR],
-		url:"/api/getHotSinger.json"
+		url:"../../api/getHotSinger.json"
 	}
 
 }
