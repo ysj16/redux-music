@@ -1,0 +1,10 @@
+@import '../utils/utils.scss';
+.searchBox{position:fixed;top:0;width:px2rem(750);height:44px;;background: #d43c33;z-index:2}
+.searchInput{display:block;margin-top:6px;margin-left:px2rem(108);padding-left:px2rem(30);width:px2rem(534);height:30px;border:0;border-radius:15px;box-sizing:border-box;font-size:14px;}
+.icon-mic{float:left;margin:9px 0 0 7px;width:px2rem(50);color:#fff;font-size:24px !important;}
+.icon-yinyue{float:right;margin:8px 10px 0 0;width:px2rem(50);color:#fff;font-size:26px !important;}
+.topNav{position:fixed;top:44px;width:px2rem(750);height:40px;background:#f8f8f9;@include flex;@include Border1px(bottom,#c6c7c7);z-index:2}
+.topNav a{padding:0 10px;height:40px;line-height:40px;}
+.topNav .active{color:#d33a31}
+.navBar{position:absolute;bottom:1px;left:0;height:2px;background-color:#d33a31;}
+.main{margin-top:84px;width:px2rem(750)}

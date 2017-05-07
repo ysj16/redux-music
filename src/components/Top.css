@@ -1,0 +1,4 @@
+@import '../utils/utils.scss';
+.top{@include Border1px(bottom,#7b766d);position:fixed;width:px2rem(750);height:44px;line-height:44px;}
+.top i{float:left;font-size:24px;color:#fff;}
+.top h3{margin:0 24px;text-align:center;color:#fff;font-size:16px;font-weight:500}

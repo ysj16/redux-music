@@ -1,0 +1,21 @@
+@import '../utils/utils.scss';
+.my-carousel {
+  height:px2rem(292) !important;
+  background: #fff;
+}
+.my-carousel a {
+  display: inline-block;
+  width: 100%;
+  margin: 0; padding: 0;
+}
+.my-carousel a img {
+  width: 100%;
+  height:px2rem(292);
+  vertical-align: top;
+}
+:global{
+	.am-carousel-wrap-dot > span{
+		width:px2rem(15);
+		height:px2rem(15);
+	}
+}

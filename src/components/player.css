@@ -1,0 +1,16 @@
+@import '../utils/utils.scss';
+.player{height:100vh;background:#3e3636;overflow:hidden;}
+.disc{position:fixed;top:px2rem(240);left:50%;margin-left:px2rem(-290);width:px2rem(581);height:px2rem(577);background:url(../images/disc.png) no-repeat;background-size:100%;}
+.cover{margin:px2rem(90) 0 0 px2rem(93);width:px2rem(396);height:px2rem(396);border-radius:50%;overflow:hidden;}
+.cover img{width:px2rem(396);height:px2rem(396);}
+.progress{position:fixed;bottom:px2rem(172);@include flex;width:px2rem(750);height:px2rem(48);line-height:px2rem(48);}
+.progress i{width:px2rem(66);font-style:normal;color:#e5e3e1;text-align:center;}
+.proBar{margin-top:px2rem(22);width:px2rem(520);height:px2rem(4);background:rgba(101,101,101,.7);border-radius:px2rem(4);overflow:hidden;}
+.proInner{margin-left:-100%;width:100%;height:100%;background:#d33a31;}
+.controls{position:fixed;bottom:0;width:px2rem(750);height:px2rem(152);text-align:center;}
+.controls i{margin:0 px2rem(20);font-size:px2rem(98);color:#e5e3e1;vertical-align:middle;}
+:global{
+	.icon-prev,.icon-next{
+		font-size:px2rem(60) !important;
+	}
+}
